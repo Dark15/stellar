@@ -1,2 +1,3 @@
 # stellar
-A react blog theme
+
+A vue 3.x blog theme
