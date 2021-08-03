@@ -36,6 +36,8 @@ module.exports = defineConfig({
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    indent: 'off',
+    '@typescript-eslint/indent': ['error', 2],
 
     // volar插件对于unused-vars暂时只能通过tslint来进行正确的检查
     '@typescript-eslint/no-unused-vars': 'off',
