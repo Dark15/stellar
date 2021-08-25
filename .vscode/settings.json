@@ -1,3 +1,5 @@
 {
-  "i18n-ally.localesPaths": []
+  "path-intellisense.mappings": {
+    "@/": "${workspaceRoot}/src"
+  }
 }

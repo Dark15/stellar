@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run dev server",
+      "type": "shell",
+      "command": "yarn",
+      "args": [
+        "dev",
+        "--open"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}
