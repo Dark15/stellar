@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id 2284355 */
+  src: url('iconfont.woff2?t=1629909647171') format('woff2'),
+    url('iconfont.woff?t=1629909647171') format('woff'),
+    url('iconfont.ttf?t=1629909647171') format('truetype');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: '\e607';
+}
+
+.icon-qq:before {
+  content: '\e602';
+}
+
+.icon-telegram:before {
+  content: '\e604';
+}
+
+.icon-github:before {
+  content: '\e609';
+}
+
+.icon-discord:before {
+  content: '\e60b';
+}
+
+.icon-wechat:before {
+  content: '\e60c';
+}
+
+.icon-box:before {
+  content: '\e605';
+}
+
+.icon-post:before {
+  content: '\e606';
+}
+
+.icon-more:before {
+  content: '\e608';
+}
+
+.icon-clock:before {
+  content: '\e60a';
+}
+
+.icon-link:before {
+  content: '\e603';
+}
+
+.icon-quote:before {
+  content: '\e67a';
+}
+
+.icon-point:before {
+  content: '\e601';
+}
+
+.icon-comment:before {
+  content: '\e6a8';
+}
+
+.icon-date:before {
+  content: '\e600';
+}
