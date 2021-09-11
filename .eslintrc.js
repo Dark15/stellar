@@ -66,6 +66,7 @@ module.exports = defineConfig({
         math: 'always'
       }
     ],
-    semi: ['error', 'never']
+    semi: ['error', 'never'],
+    'no-undef': 'off'
   }
 })
