@@ -1,0 +1,35 @@
+$clsPrefix: 'stellar-active-header';
+
+.#{$clsPrefix} {
+  color: #fff;
+  .#{$clsPrefix}-brand-wrapper {
+    padding: 0 7rem;
+    margin-bottom: 3rem;
+    .#{$clsPrefix}-brand-container {
+      display: flow-root;
+      .#{$clsPrefix}-brand-avatar {
+        height: 8rem;
+        float: left;
+        border-radius: 100%;
+        margin-right: 4.5rem;
+        cursor: pointer;
+      }
+      .#{$clsPrefix}-brand-info-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 8rem;
+        border-bottom: 1px solid #fff;
+        text-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+
+        .#{$clsPrefix}-brand-info {
+          display: inline;
+        }
+        .#{$clsPrefix}-search-icon {
+          font-size: 3rem !important;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
