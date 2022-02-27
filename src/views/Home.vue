@@ -1,20 +1,32 @@
 <template>
   <div class="h-full">
-    <div class="flex items-center justify-center h-screen">
+    <div class="h-screen">
       <ActiveHeader
         :blog-name="blogName"
         :avatar-img="avatarImg"
         :navbar-list="navbarList"
         :social-media-list="socialMedia"
       />
+      <div
+        class="transform fixed bottom-[15%] left-[50%] translate-x-[-50%] text-[1.5rem] text-white text-shadow-thin opacity-60 leading-normal"
+        ref="hitokoto"
+      >
+        <p>问君能有几多愁？恰似一江春水向东流。</p>
+        <p class="text-right">——虞美人·春花秋月何时了</p>
+      </div>
       <!-- <PostCard /> -->
     </div>
+
+    <div class="h-[100rem]"></div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import avatarImg from '@/assets/images/avatar.jpg'
 import type { Navbar, SocialMedia } from '@/components/ActiveHeader/index.vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 const blogName = 'Starry 星空'
 
 const navbarList: Navbar[] = [
@@ -69,4 +81,24 @@ const socialMedia: SocialMedia[] = [
   //   link: 'https://wechat.com/'
   // }
 ]
+
+const hitokoto = ref(null)
+
+onMounted(() => {
+  ScrollTrigger.create({
+    trigger: hitokoto.value,
+    start: 0,
+    scrub: true,
+    animation: gsap.to(hitokoto.value, {
+      opacity: 0,
+      y: '-=30'
+    })
+  })
+})
 </script>
+
+<style scoped>
+.text-shadow-thin {
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.72);
+}
+</style>
