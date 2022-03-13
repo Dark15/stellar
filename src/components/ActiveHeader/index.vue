@@ -1,18 +1,16 @@
 <template>
-  <header :class="`${clsPrefix}`">
-    <div :class="`${clsPrefix}-brand-wrapper`">
-      <div :class="`${clsPrefix}-brand-container`">
-        <img :src="props.avatarImg" :class="`${clsPrefix}-brand-avatar`" />
+  <header class="text-white fixed top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] max-w-83rem">
+    <div class="px-7rem mb-3rem">
+      <div class="flex">
+        <img :src="props.avatarImg" class="h-8rem relative rounded-full mr-4.5rem cursor-pointer" />
         <div
-          :class="`${clsPrefix}-brand-info-container`"
-          class="relative flex items-center"
-          id="test"
+          class="relative flex items-center w-full h-8rem text-shadow-light"
         >
           <div
-            class="transform absolute bottom-0 border-b-[1px] border-b-white w-[565px] left-[50%] translate-x-[-50%]"
+            class="transform absolute bottom-0 border-b-1px border-b-white w-565px left-[50%] translate-x-[-50%]"
             ref="line"
           ></div>
-          <div :class="`${clsPrefix}-brand-info`" ref="info">
+          <div ref="info" class="inline">
             <h1 class="text-5xl tracking-[1px] mr-[4.5rem] inline">
               {{ props.blogName }}
             </h1>
@@ -24,14 +22,13 @@
               :href="socialMedia.link"
             >
               <i
-                :class="['iconfont', `icon-${socialMedia.icon}`]"
-                class="!text-[2.5rem]"
+                :class="[`icon-${socialMedia.icon}`]"
+                class="iconfont !text-[2.5rem]"
               ></i>
             </a>
           </div>
           <i
-            :class="`${clsPrefix}-search-icon`"
-            class="absolute right-0 iconfont icon-search"
+            class="absolute right-0 iconfont icon-search cursor-pointer !text-3rem !leading-normal"
           ></i>
         </div>
       </div>
@@ -66,8 +63,8 @@
 
 <script lang="ts" setup>
 // import { getHitokoto } from '@/api/hitokoto'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// import gsap from 'gsap'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export interface Navbar {
   icon: string
@@ -80,8 +77,6 @@ export interface SocialMedia {
   icon: string
   link: string
 }
-
-const clsPrefix = 'stellar-active-header'
 
 interface Props {
   avatarImg: string
@@ -106,39 +101,38 @@ const line = ref<HTMLDivElement>()
 const navbar = ref<HTMLDivElement>()
 
 onMounted(() => {
-  ScrollTrigger.create({
-    trigger: info.value,
-    start: 0,
-    scrub: true,
-    animation: gsap.to(info.value!, {
-      y: '-200px',
-      opacity: 0
-    })
-  })
-  ScrollTrigger.create({
-    trigger: line.value,
-    start: 0,
-    scrub: true,
-    animation: gsap.to(line.value!, {
-      y: '-200px',
-      width: 0,
-      opacity: 0
-    })
-  })
-  gsap.to(navbar.value!, {
-    y: '-200px',
-    duration: 1,
-    scrollTrigger: {
-      start: 0,
-      scrub: true,
-      markers: true
-    }
-  })
+  // ScrollTrigger.create({
+  //   trigger: info.value,
+  //   start: 0,
+  //   scrub: true,
+  //   animation: gsap.to(info.value!, {
+  //     y: '-200px',
+  //     opacity: 0
+  //   })
+  // })
+  // ScrollTrigger.create({
+  //   trigger: line.value,
+  //   start: 0,
+  //   scrub: true,
+  //   animation: gsap.to(line.value!, {
+  //     y: '-200px',
+  //     width: 0,
+  //     opacity: 0
+  //   })
+  // })
+  // gsap.to(navbar.value!, {
+  //   y: '-200px',
+  //   duration: 1,
+  //   scrollTrigger: {
+  //     start: 0,
+  //     scrub: true,
+  //     markers: true
+  //   }
+  // })
 })
 </script>
 
 <style lang="scss">
-@import './index.scss';
 .text-shadow {
   text-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
 }
