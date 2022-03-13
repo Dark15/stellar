@@ -81,7 +81,7 @@
 </template>
 
 <script lang="ts" setup>
-import avatarImg from '@/assets/images/avatar.jpg'
+import avatarImg from '@/assets/images/avatar.png'
 // import gsap from 'gsap'
 // import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -102,7 +102,7 @@ interface SocialMedia {
 const navbarList: Navbar[] = [
   {
     title: '文章',
-    path: '/',
+    path: '/posts',
     icon: 'post',
     onClick() {
       console.log('文章')

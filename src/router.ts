@@ -8,9 +8,9 @@ const blogRoutes: RouteRecordRaw[] = [
     component: () => import('./views/Home.vue')
   },
   {
-    path: '/post/:id',
-    name: 'post',
-    component: () => import('./views/Post.vue')
+    path: '/posts',
+    name: 'posts',
+    component: () => import('./views/PostList.vue')
   }
 ]
 
