@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "mock": "node ./mocks/server.js",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "prepare": "husky install"
@@ -32,6 +33,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.17.0",
     "husky": ">=7",
+    "json-server": "^0.17.0",
     "lint-staged": ">=11",
     "sass": "^1.39.2",
     "sass-loader": "^12.1.0",
