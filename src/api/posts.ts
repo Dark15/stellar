@@ -1,5 +1,5 @@
 import request from '@/lib/utils/axios'
-import { Post } from './model/Posts'
+import type { Post } from './model/posts'
 
 export async function getPostList() {
   return request.get<Post[]>('/api/posts')

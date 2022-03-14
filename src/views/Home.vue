@@ -73,7 +73,6 @@
         <p>问君能有几多愁？恰似一江春水向东流。</p>
         <p class="text-right">——虞美人·春花秋月何时了</p>
       </div>
-      <!-- <PostCard /> -->
     </div>
 
     <div class="h-[100rem]"></div>
@@ -82,75 +81,12 @@
 
 <script lang="ts" setup>
 import avatarImg from '@/assets/images/avatar.png'
+import { navbarList } from '@/lib/data/navbarList'
+import { socialMediaList } from '@/lib/data/socialMedia'
 // import gsap from 'gsap'
 // import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const blogName = 'Starry 星空'
-
-interface Navbar {
-  icon: string
-  title: string
-  path: string
-  onClick?: () => void
-}
-
-interface SocialMedia {
-  icon: string
-  link: string
-}
-
-const navbarList: Navbar[] = [
-  {
-    title: '文章',
-    path: '/posts',
-    icon: 'post',
-    onClick() {
-      console.log('文章')
-    }
-  },
-  {
-    title: '时光轴',
-    path: '/timeline',
-    icon: 'clock'
-  },
-  {
-    title: '分类',
-    path: '/categories',
-    icon: 'box'
-  },
-  {
-    title: '友链',
-    path: '/links',
-    icon: 'link'
-  },
-  {
-    title: '更多',
-    path: '/more',
-    icon: 'more'
-  }
-]
-const socialMediaList: SocialMedia[] = [
-  {
-    icon: 'github',
-    link: 'https://github.com/Dark15'
-  },
-  {
-    icon: 'telegram',
-    link: 'https://t.me/starryii'
-  },
-  {
-    icon: 'discord',
-    link: 'https://discordapp.com/users/333104275712638977'
-  },
-  {
-    icon: 'qq',
-    link: 'http://wpa.qq.com/msgrd?v=3&uin=972985335&site=qq&menu=yes'
-  }
-  // {
-  //   icon: 'wechat',
-  //   link: 'https://wechat.com/'
-  // }
-]
 
 const hitokoto = ref(null)
 
