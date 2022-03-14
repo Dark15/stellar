@@ -15,7 +15,7 @@ module.exports = (() => {
     data.posts.push({
       id: i,
       title: `测试文章${i}`,
-      tags: faker.random
+      tags: faker.lorem
         .words(faker.datatype.number({ min: 1, max: 3 }))
         .split(' '),
       coverImage: 'http://static-blog.starryio.com/test-cover.png',

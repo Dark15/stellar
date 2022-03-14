@@ -9,7 +9,7 @@
       <div class="flex flex-col justify-between h-full">
         <div class="flex">
           <span class="post-tag">
-            <i class="iconfont icon-date !text-12px !leading-normal mr-3px"></i>
+            <i class="iconfont icon-date !text-12px mr-3px"></i>
             {{ dateFormat }}
           </span>
           <div class="post-tag" v-for="tag of tags" :key="tag">{{ tag }}</div>
