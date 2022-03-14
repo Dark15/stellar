@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': ^13.1.0
   '@commitlint/config-conventional': ^13.1.0
+  '@faker-js/faker': ^6.0.0-beta.0
   '@types/json-server': ^0.14.4
   '@types/node': ^16.9.1
   '@typescript-eslint/eslint-plugin': ^4.31.0
@@ -49,6 +50,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': registry.nlark.com/@commitlint/cli/13.1.0
   '@commitlint/config-conventional': registry.nlark.com/@commitlint/config-conventional/13.1.0
+  '@faker-js/faker': registry.npmmirror.com/@faker-js/faker/6.0.0-beta.0
   '@types/json-server': registry.npmmirror.com/@types/json-server/0.14.4
   '@types/node': registry.nlark.com/@types/node/16.9.1
   '@typescript-eslint/eslint-plugin': registry.nlark.com/@typescript-eslint/eslint-plugin/4.31.0_d9c1bc16c4e2aea4e8e177a5961dd3bf
@@ -5396,6 +5398,13 @@ packages:
     version: 0.4.0
     dependencies:
       '@types/throttle-debounce': registry.npmmirror.com/@types/throttle-debounce/2.1.0
+    dev: true
+
+  registry.npmmirror.com/@faker-js/faker/6.0.0-beta.0:
+    resolution: {integrity: sha512-7QdsX5ZqUEz87twuoKEJe7NHn6OHQsVYQpJcK0disnR0XuVb9FEgQUcsViard9OTNN/fG/nZT63V35vieOwZ4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@faker-js/faker/-/faker-6.0.0-beta.0.tgz}
+    name: '@faker-js/faker'
+    version: 6.0.0-beta.0
+    engines: {node: '>=14.0.0', npm: '>=7.0.0'}
     dev: true
 
   registry.npmmirror.com/@nodelib/fs.stat/2.0.5:

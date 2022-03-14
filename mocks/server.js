@@ -1,6 +1,6 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('./mocks/db.json')
+const router = jsonServer.router(require('./data.js'))
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
