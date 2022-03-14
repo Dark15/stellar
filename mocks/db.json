@@ -4,13 +4,17 @@
       "id": 1,
       "title": "测试文章1",
       "tags": ["JavaScript", "Vue"],
-      "createdTime": 1647195573,
-      "updatedTime": 1647195573
+      "coverImage": "http://static-blog.starryio.com/test-cover.png",
+      "excerpt": "This is a description of the first post.",
+      "createdTime": 1644768000,
+      "updatedTime": 1644768000
     },
     {
       "id": 2,
       "title": "测试文章2",
       "tags": ["Python", "PyTorch", "TensorFlow", "Keras"],
+      "coverImage": "http://static-blog.starryio.com/test-cover.png",
+      "excerpt": "This is a description of the second post.",
       "createdTime": 1647175573,
       "updatedTime": 1647185573
     }
