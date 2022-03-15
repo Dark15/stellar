@@ -40,31 +40,7 @@
             </div>
           </div>
         </div>
-        <div
-          class="w-[83rem] h-[12rem] bg-white bg-opacity-[0.15] backdrop-filter backdrop-blur-[18px] backdrop-brightness-[1.15] rounded-[1.5rem] select-none"
-          ref="navbar"
-        >
-          <nav class="h-full px-[7rem]">
-            <ul class="flex items-center justify-between h-full text-center">
-              <li
-                class="text-shadow"
-                v-for="nav in navbarList"
-                :key="nav.path"
-                @click="nav.onClick"
-              >
-                <router-link :to="nav.path">
-                  <i
-                    class="!text-[3.5rem] !leading-normal"
-                    :class="['iconfont', `icon-${nav.icon}`]"
-                  ></i>
-                  <span class="block text-[2.5rem] leading-normal">{{
-                    nav.title
-                  }}</span>
-                </router-link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <Navbar />
       </header>
       <div
         class="transform fixed bottom-[15%] left-[50%] translate-x-[-50%] text-[1.5rem] text-white text-shadow-thin opacity-60 leading-normal"
@@ -81,7 +57,6 @@
 
 <script lang="ts" setup>
 import avatarImg from '@/assets/images/avatar.png'
-import { navbarList } from '@/lib/data/navbarList'
 import { socialMediaList } from '@/lib/data/socialMedia'
 // import gsap from 'gsap'
 // import { ScrollTrigger } from 'gsap/ScrollTrigger'
